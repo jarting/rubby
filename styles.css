@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #800020;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #660018;
+  padding: 15px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffe6f3;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('images/rose-background.jpg') center/cover no-repeat fixed;
+}
+
+.hero-section h1 {
+  font-size: 3.5em;
+  color: #ffe6f3;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-section p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.about-section, .portfolio-section, .contact-section {
+  padding: 80px 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-content img {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.about-content p {
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #ffe6f3;
+  color: #800020;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #660018;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  color: #ffe6f3;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
